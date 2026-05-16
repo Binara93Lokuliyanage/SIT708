@@ -8,7 +8,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    MaterialButton btnCreate, btnShow;
+    MaterialButton btnCreate, btnShow, btnMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
         btnCreate = findViewById(R.id.btnCreate);
         btnShow = findViewById(R.id.btnShow);
+        btnMap = findViewById(R.id.btnMap);
 
         btnCreate.setOnClickListener(v ->
                 startActivity(new Intent(this, CreateAdvertActivity.class)));
 
         btnShow.setOnClickListener(v ->
                 startActivity(new Intent(this, ItemListActivity.class)));
+
+        btnMap.setOnClickListener(v ->
+                startActivity(new Intent(this, MapActivity.class)));
     }
 }

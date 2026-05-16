@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "LostFound.db";
-    public static final int DB_VERSION = 1;
+    public static final int DB_VERSION = 3;
 
     public DBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -25,7 +25,9 @@ public class DBHelper extends SQLiteOpenHelper {
                 "location TEXT, " +
                 "category TEXT, " +
                 "imageUri TEXT, " +
-                "createdAt TEXT)");
+                "createdAt TEXT, " +
+                "latitude REAL, " +
+                "longitude REAL)");
     }
 
     @Override

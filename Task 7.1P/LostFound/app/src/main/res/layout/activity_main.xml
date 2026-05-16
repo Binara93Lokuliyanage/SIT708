@@ -41,6 +41,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMap"
+                android:text="Show On Map"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

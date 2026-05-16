@@ -10,6 +10,8 @@ public class Advert {
     public String location;
     public String category;
     public String imageUri;
+    public double latitude;
+    public double longitude;
     public String createdAt;
 
     public Advert(int id, String type, String name, String phone, String description,
