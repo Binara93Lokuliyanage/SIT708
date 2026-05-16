@@ -19,7 +19,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBN0zbJF4Y_Kgu0sCJXKn9ukp8_CPlxV2M" />
+            android:value="I_REMOVED_FOR_GITHUB" />
 
         <activity android:name=".activities.ItemDetailsActivity" />
         <activity android:name=".activities.ItemListActivity" />
